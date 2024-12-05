@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloe's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf0; /* Cream */
+            color: #333;
+        }
+
+        header {
+            background-color: #fce4ec; /* Light Pink */
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #d81b60; /* Pastel Pink Text */
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d81b60;
+            margin: 0 10px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ad1457; /* Slightly darker pink */
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 1px solid #fce4ec;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .project-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-images img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #d81b60;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fce4ec;
+            color: #333;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        table th, table td {
+            border: 1px solid #d81b60;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #fce4ec;
+            color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chloe's Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" style="text-align: left;">
+    <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="your-photo.jpg" alt="Chloe's Photo" style="width: 500px; height: 300px; border-radius: 10px; border: 3px solid #d81b60;">
+        <div>
+            <h2 style="font-size: 2.5rem; margin: 0; color: #d81b60;">Hello, I’m Chloe</h2>
+            <p style="margin-top: 10px; font-size: 1rem;">I’m a passionate designer and student pursuing Global Business and Digital Arts at the University of Waterloo. I love creating user-centered designs and exploring new digital trends.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+            <img src="project1.jpg" alt="Travel App Redesign" style="width: 150px; height: 150px; border: 3px solid #d81b60; border-radius: 8px;">
+            <p style="margin-top: 10px; font-size: 1rem; color: #333;"><strong>Travel App Redesign</strong><br>Class: GBDA210</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="project2.jpg" alt="Branding Website" style="width: 150px; height: 150px; border: 3px solid #d81b60; border-radius: 8px;">
+            <p style="margin-top: 10px; font-size: 1rem; color: #333;"><strong>Branding Website</strong><br>Class: GBDA203</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="project3.jpg" alt="Interactive Story" style="width: 150px; height: 150px; border: 3px solid #d81b60; border-radius: 8px;">
+            <p style="margin-top: 10px; font-size: 1rem; color: #333;"><strong>Interactive Story</strong><br>Class: GBDA205</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="project4.jpg" alt="Additional Project" style="width: 150px; height: 150px; border: 3px solid #d81b60; border-radius: 8px;">
+            <p style="margin-top: 10px; font-size: 1rem; color: #333;"><strong>UX Case Study</strong><br>Class: GBDA302</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via email: <a href="mailto:c33ma@uwaterloo.ca">c33ma@uwaterloo.ca</a></p>
+    <p>Or connect on LinkedIn: <a href="https://linkedin.com/in/chloe" target="_blank">linkedin.com/in/chloe</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Chloe Ma. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
