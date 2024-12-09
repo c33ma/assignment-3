@@ -20,14 +20,22 @@
             padding: 50px 0;
         }
 
+        header img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
         header h1 {
             margin: 0;
             font-size: 2.5rem;
-            color: #d81b60; /* Pastel Pink Text */
+            color: #d81b60;
         }
 
         nav {
-            margin: 20px 0;
+            text-align: center;
+            margin-top: 10px;
         }
 
         nav a {
@@ -43,29 +51,131 @@
         }
 
         section {
-            padding: 50px 20px;
+            padding: 30px 20px;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 30px auto 0;
+        }
+
+        #about {
+            text-align: left;
+        }
+
+        #about img {
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            border: 3px solid #d81b60;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #d81b60;
+        }
+
+        /* Divider Line Styles */
+        .divider {
+            width: 90%;
+            height: 2px;
+            background-color: #d81b60; /* Pink */
+            margin: 30px auto;
+        }
+
+        /* Table Styles */
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            text-align: left;
+        }
+
+        table th {
+            padding: 10px;
+            background-color: #fce4ec;
+            color: #d81b60;
+            border: 1px solid #d81b60;
+        }
+
+        table td {
+            padding: 10px;
+            border: 1px solid #d81b60;
+        }
+
+        table a {
+            color: #d81b60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        table a:hover {
+            text-decoration: underline;
+        }
+
+        h3 {
             text-align: center;
-            border-bottom: 1px solid #fce4ec;
+            color: #d81b60;
         }
 
-        section:last-of-type {
-            border-bottom: none;
+        .project-container {
+            background-color: #fff8e1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
         }
 
-        .project-images {
+        .project-container h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .project-container .content {
             display: flex;
-            justify-content: center;
+            align-items: center;
             gap: 20px;
-            flex-wrap: wrap;
+            margin-top: 15px;
         }
 
-        .project-images img {
+        .project-container .content img {
             width: 200px;
-            height: auto;
-            border: 2px solid #d81b60;
+            height: 260px;
             border-radius: 8px;
+        }
+
+        .project-container .light-sage {
+            color: #388e3c;
+        }
+
+        .project-container .light-pink {
+            color: #d81b60;
+        }
+
+        .project-container .content.reverse {
+            flex-direction: row-reverse;
+        }
+
+        #contact h2, footer p {
+            text-align: center;
+        }
+
+        #contact p {
+            text-align: center;
+        }
+
+        .resume-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #fce4ec;
+            color: #d81b60;
+            font-size: 1.2rem;
+            border: 2px solid #d81b60;
+            border-radius: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .resume-button:hover {
+            background-color: #f8dfe7;
         }
 
         footer {
@@ -73,145 +183,100 @@
             padding: 20px 0;
             background-color: #fce4ec;
             color: #333;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
-
-        table th, table td {
-            border: 1px solid #d81b60;
-            padding: 10px;
-            text-align: center;
-        }
-
-        table th {
-            background-color: #fce4ec;
-            color: #d81b60;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="text-align: center; margin-bottom: 10px;">
-        <img src="meow.gif" alt="Cute Cat GIF" style="width: 100px; height: auto; display: block; margin: 0 auto;">
-    </div>
-    <h1 style="margin: 0; font-size: 2.5rem; color: #d81b60; text-align: center;">Chloe's Portfolio</h1>
-    <nav style="text-align: center; margin-top: 10px;">
-        <a href="#about" style="text-decoration: none; color: #d81b60; margin: 0 10px; font-size: 1.1rem;">About</a>
-        <a href="#projects" style="text-decoration: none; color: #d81b60; margin: 0 10px; font-size: 1.1rem;">Projects</a>
-        <a href="#contact" style="text-decoration: none; color: #d81b60; margin: 0 10px; font-size: 1.1rem;">Contact</a>
+    <img src="meow.gif" alt="Cute Cat GIF">
+    <h1>Chloe's Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section id="about" style="text-align: left;">
+<section id="about">
     <div style="display: flex; align-items: center; gap: 20px;">
-        <img src="me.JPG" alt="Chloe's Photo" style="width: 300px; height: 350px; border-radius: 10px; border: 3px solid #d81b60;">
+        <img src="me.JPG" alt="Chloe's Photo">
         <div>
-            <h2 style="font-size: 2.5rem; margin: 0; color: #d81b60;">Hello, I’m Chloe!</h2>
+            <h2>Hello, I’m Chloe!</h2>
             <p style="margin-top: 10px; font-size: 1rem;">I’m a passionate designer and student pursuing Global Business and Digital Arts at the University of Waterloo. I love creating user-centered designs and exploring new digital trends.</p>
         </div>
     </div>
-</section>
 
-<section id="projects">
-    <h2 style="text-align: center; color: #d81b60;">Projects</h2>
-
-    <!-- Photography Assignment Section -->
-    <div style="background-color: #fff8e1; padding: 20px; margin: 20px 0; border-radius: 10px;">
-        <h3 style="margin: 0; color: #f57f17; text-align: center;">Photography Assignment</h3>
-        <div class="slideshow-container" style="max-width: 500px; margin: 20px auto; position: relative; border: 3px solid #f57f17; border-radius: 10px; overflow: hidden;">
-            
-            <!-- Full-width slides -->
-            <div class="mySlides" style="display: block;">
-                <img src="flower.jpeg" style="width: 100%;" alt="Photo 1">
-            </div>
-
-            <div class="mySlides" style="display: none;">
-                <img src="cucumber.jpeg" style="width: 100%;" alt="Photo 2">
-            </div>
-
-            <div class="mySlides" style="display: none;">
-                <img src="iba.jpeg" style="width: 100%;" alt="Photo 3">
-            </div>
-
-            <div class="mySlides" style="display: none;">
-                <img src="hall.jpeg" style="width: 100%;" alt="Photo 4">
-            </div>
-
-            <div class="mySlides" style="display: none;">
-                <img src="sky.jpeg" style="width: 100%;" alt="Photo 5">
-            </div>
-
-            <!-- Next/prev controls -->
-            <a class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); font-size: 18px; cursor: pointer; user-select: none; color: white; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 50%;" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); font-size: 18px; cursor: pointer; user-select: none; color: white; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 50%;" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <p style="text-align: center; margin-top: 10px;">Class: GBDA Photography</p>
+    <!-- Certifications Table -->
+    <div style="margin-top: 20px;">
+        <h3>Certifications</h3>
+        <table>
+            <tr>
+                <th>Achievement</th>
+                <th>Date</th>
+                <th>Document</th>
+            </tr>
+            <tr>
+                <td>SFA/CPR Certification</td>
+                <td>April 4, 2023</td>
+                <td><a href="SFA_CPR_Certification.pdf" target="_blank">View Document</a></td>
+            </tr>
+            <tr>
+                <td>High School Graduation</td>
+                <td>June 2023</td>
+                <td><a href="High_School_Graduation.pdf" target="_blank">View Document</a></td>
+            </tr>
+            <tr>
+                <td>Chinese Proficiency Progression Assessment</td>
+                <td>2020</td>
+                <td><a href="Chinese_Proficiency_Assessment.pdf" target="_blank">View Document</a></td>
+            </tr>
+        </table>
     </div>
 </section>
 
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+<div class="divider"></div>
 
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Show the current slide
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {slideIndex = 1} // Wrap back to the first slide
-        if (n < 1) {slideIndex = slides.length} // Wrap to the last slide
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; // Hide all slides
-        }
-        slides[slideIndex - 1].style.display = "block"; // Show the current slide
-    }
-</script>
+<section id="projects">
+    <h2 style="color: #d81b60; text-align: center;">Projects</h2>
 
     <!-- Project 1 -->
-    <div style="background-color: #e0f2f1; padding: 20px; margin: 20px 0; border-radius: 10px;"> <!-- Light Sage Green -->
-        <h3 style="text-align: center; margin: 0; color: #388e3c;">Logo Design</h3>
-        <div style="display: flex; align-items: center; gap: 20px; margin-top: 15px; flex-direction: row-reverse;">
-            <img src="logo.jpg" alt="logo" style="width: 200px; height: 260px; border-radius: 8px; border: 3px solid #388e3c;">
-            <p style="margin: 0; font-size: 1rem;">This project focused on redesigning a travel application to improve user experience and functionality. <br><strong>Class:</strong> GBDA210</p>
+    <div class="project-container" style="background-color: #e0f2f1;">
+        <h3 class="light-sage">Logo Design</h3>
+        <div class="content reverse">
+            <img src="logo.jpg" alt="Logo Design">
+            <p>This project focused on redesigning a travel application to improve user experience and functionality.<br><strong>Class:</strong> GBDA210</p>
         </div>
     </div>
 
     <!-- Project 2 -->
-    <div style="background-color: #fce4ec; padding: 20px; margin: 20px 0; border-radius: 10px;"> <!-- Light Pink -->
-        <h3 style="text-align: center; margin: 0; color: #d81b60;">JavaScript Game</h3>
-        <div style="display: flex; align-items: center; gap: 20px; margin-top: 15px; flex-direction: row-reverse;">
-            <img src="game.jpeg" alt="game" style="width: 200px; height: 260px; border-radius: 8px; border: 3px solid #d81b60;">
-            <p style="margin: 0; font-size: 1rem;">A branding website developed for a local client to showcase their personal brand and portfolio. <br><strong>Class:</strong> GBDA203</p>
+    <div class="project-container" style="background-color: #fce4ec;">
+        <h3 class="light-pink">JavaScript Game</h3>
+        <div class="content reverse">
+            <img src="game.jpeg" alt="JavaScript Game">
+            <p>A branding website developed for a local client to showcase their personal brand and portfolio.<br><strong>Class:</strong> GBDA203</p>
         </div>
     </div>
 
     <!-- Room Documentary Video -->
-    <div style="background-color: #fffaf0; padding: 20px; margin: 20px 0; border-radius: 10px;"> <!-- Cream Background -->
-        <h3 style="text-align: center; margin: 0; color: #d81b60;">Room Documentary</h3>
-        <div style="margin-top: 15px; text-align: center;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vo9WCszMtwM" title="Room Documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="project-container" style="background-color: #fffaf0;">
+        <h3 class="light-pink" style="margin-bottom: 20px;">Room Documentary</h3> <!-- Added margin-bottom -->
+        <div style="text-align: center;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vo9WCszMtwM" title="Room Documentary" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </section>
+
+<div class="divider"></div>
 
 <section id="contact">
     <h2>Contact Me</h2>
     <p>Feel free to reach out via email: <a href="mailto:c33ma@uwaterloo.ca">c33ma@uwaterloo.ca</a></p>
     <p>Or connect on LinkedIn: <a href="https://linkedin.com/in/chloe" target="_blank">linkedin.com/in/chloe</a></p>
+    <div style="text-align: center;">
+        <a href="Resume_2024.pdf" target="_blank" class="resume-button">View My Resume</a>
+    </div>
 </section>
 
 <footer>
