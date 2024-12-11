@@ -8,11 +8,16 @@
     <style>
         /* General Styles */
         body {
-            font-family: "Lora", serif; /* Lora for body text */
+            font-family: "Lora", serif;
             margin: 0;
             padding: 0;
             background-color: #fffaf0; /* Cream */
             color: #333;
+        }
+
+        h1, h2, h3 {
+            font-family: "Oswald", sans-serif;
+            margin: 0;
         }
 
         header {
@@ -29,8 +34,7 @@
         }
 
         header h1 {
-            font-family: "Sacramento", cursive; /* Handwriting font */
-            margin: 0;
+            font-family: "Sacramento", cursive;
             font-size: 3rem;
             color: #d81b60;
         }
@@ -41,7 +45,6 @@
         }
 
         nav a {
-            font-family: "Oswald", sans-serif;
             text-decoration: none;
             color: #d81b60;
             margin: 0 10px;
@@ -59,10 +62,6 @@
             margin: 30px auto 0;
         }
 
-        #about {
-            text-align: left;
-        }
-
         #about img {
             width: 300px;
             height: 350px;
@@ -71,13 +70,10 @@
         }
 
         #about h2 {
-            font-family: "Oswald", sans-serif; /* Oswald for headers */
             font-size: 2.5rem;
-            margin: 0;
             color: #d81b60;
         }
 
-        /* Divider Line Styles */
         .divider {
             width: 90%;
             height: 2px;
@@ -85,7 +81,6 @@
             margin: 30px auto;
         }
 
-        /* Table Styles */
         table {
             margin: 20px auto;
             border-collapse: collapse;
@@ -105,23 +100,6 @@
             border: 1px solid #d81b60;
         }
 
-        table a {
-            color: #d81b60;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        table a:hover {
-            text-decoration: underline;
-        }
-
-        h3 {
-            font-family: "Oswald", sans-serif; /* Oswald for section titles */
-            text-align: center;
-            color: #d81b60;
-            margin: 0;
-        }
-
         .project-container {
             background-color: #fff8e1;
             padding: 20px;
@@ -130,9 +108,7 @@
         }
 
         .project-container h3 {
-            font-family: "Oswald", sans-serif; /* Oswald for project titles */
             text-align: center;
-            margin: 0;
         }
 
         .project-container .content {
@@ -152,15 +128,6 @@
             flex-direction: row-reverse;
         }
 
-        #contact h2, footer p {
-            font-family: "Oswald", sans-serif; /* Oswald for headers */
-            text-align: center;
-        }
-
-        #contact p {
-            text-align: center;
-        }
-
         .resume-button {
             text-decoration: none;
             padding: 10px 20px;
@@ -171,7 +138,6 @@
             border-radius: 20px;
             display: inline-block;
             transition: background-color 0.3s ease;
-            margin-top: 20px;
         }
 
         .resume-button:hover {
@@ -182,8 +148,11 @@
             text-align: center;
             padding: 20px 0;
             background-color: #fce4ec;
-            color: #333;
-            margin-top: 20px;
+        }
+
+        footer img {
+            width: 80px;
+            height: auto;
         }
     </style>
 </head>
@@ -205,7 +174,7 @@
         <img src="me.JPG" alt="Chloe's Photo">
         <div>
             <h2>Hello, I’m Chloe!</h2>
-            <p style="margin-top: 10px; font-size: 1rem;">I’m a student pursuing Global Business and Digital Arts at the University of Waterloo, based in the GTA. Growing up, I’ve always loved everything art-related, from drawing and design to fashion. I enjoy visiting art galleries and exploring online for inspiration, staying up to date with the latest trends. I believe continuous learning is essential for success, whether it’s improving my design skills or finding new ways to bring creative ideas to life. My goal is to blend creativity and design to create meaningful, impactful experiences.</p>
+            <p>I’m a student pursuing Global Business and Digital Arts at the University of Waterloo, based in the GTA. Growing up, I’ve always loved everything art-related, from drawing and design to fashion. I enjoy visiting art galleries and exploring online for inspiration, staying up to date with the latest trends. I believe continuous learning is essential for success, whether it’s improving my design skills or finding new ways to bring creative ideas to life. My goal is to blend creativity and design to create meaningful, impactful experiences.</p>
         </div>
     </div>
 </section>
@@ -213,9 +182,8 @@
 <div class="divider"></div>
 
 <section id="projects">
-    <h3 style="color: #d81b60; text-align: center; font-size: 1.7rem;">PROJECTS</h3>
+    <h3 style="color: #d81b60; text-align: center;">PROJECTS</h3>
 
-    <!-- Project 1 -->
     <div class="project-container" style="background-color: #ffefd5;">
         <h3 style="color: #e6a756;">Logo Design</h3>
         <div class="content reverse">
@@ -224,7 +192,6 @@
         </div>
     </div>
 
-    <!-- Project 2 -->
     <div class="project-container" style="background-color: #fce4ec;">
         <h3 style="color: #d81b60;">JavaScript Game</h3>
         <div class="content reverse">
@@ -233,11 +200,10 @@
         </div>
     </div>
 
-    <!-- Nature Portrait Video -->
     <div class="project-container" style="background-color: #e0f2f1;"> 
         <h3 style="color: #388e3c; margin-bottom: 20px;">Nature Portrait</h3> 
         <div style="text-align: center;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7yKuevUY1_o" title="Nature Portrait" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7yKuevUY1_o" title="Nature Portrait" style="border: none;" allowfullscreen></iframe>
             <p style="margin-top: 15px;">This silent short film captures the beauty of nature, emphasizing its tranquility and serenity. The documentary features fields of grass, trees adorned with vibrant leaves, and small creatures like butterflies and ladybugs, alongside diverse flowers and plants. It also showcases people strolling along trails and enjoying the park’s peaceful ambiance. Through these visuals, the film conveys a deep connection to nature and celebrates the simple joys of spending time outdoors.</p>
         </div>
     </div>
@@ -246,7 +212,7 @@
 <div class="divider"></div>
 
 <section id="certifications">
-    <h3 style="color: #d81b60; text-align: center; font-size: 1.7rem;">CERTIFICATIONS</h3>
+    <h3 style="color: #d81b60; text-align: center;">CERTIFICATIONS</h3>
     <table>
         <tr>
             <th>Achievement</th>
@@ -270,9 +236,9 @@
 <div class="divider"></div>
 
 <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out via email: <a href="mailto:c33ma@uwaterloo.ca">c33ma@uwaterloo.ca</a></p>
-    <p>Or connect on LinkedIn: <a href="https://linkedin.com/in/chloe-ma-43719031a" target="_blank">linkedin.com/in/chloema</a></p>
+    <h2 style="font-family: Oswald; text-align: center; font-size: 2rem;">Contact Me</h2>
+    <p style="text-align: center;">Feel free to reach out via email: <a href="mailto:c33ma@uwaterloo.ca" style="color:#d81b60;">c33ma@uwaterloo.ca</a></p>
+    <p style="text-align: center;">Or connect on LinkedIn: <a href="https://linkedin.com/in/chloe-ma-43719031a" target="_blank" style="color: #d81b60;">linkedin.com/in/chloema</a></p>
     <div style="text-align: center;">
         <a href="Resume_2024.pdf" target="_blank" class="resume-button">View My Resume</a>
     </div>
@@ -283,6 +249,5 @@
         <img src="meow2.gif" alt="Cute Cat GIF" style="width: 80px; height: auto;">
     </div>
 </footer>
-
 </body>
 </html>
